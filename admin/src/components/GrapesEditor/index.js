@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'; // eslint-disable-line impor
 import PropTypes from 'prop-types';
 import GrapesJS from 'grapesjs';
 import gjsBasicBlocks from 'grapesjs-blocks-basic'; // eslint-disable-line no-unused-vars
-import { useStrapi, prefixFileUrlWithBackendUrl } from 'strapi-helper-plugin'; // eslint-disable-line import/no-unresolved
+import { useStrapi, prefixFileUrlWithBackendUrl } from '@strapi/helper-plugin'; // eslint-disable-line import/no-unresolved
 import './assets/scss/main.scss';
 import addStrapiPlugin from './grapes-plugins/strapi';
 import { strapiPluginRef } from './grapes-plugins/strapi/consts';
@@ -18,7 +18,7 @@ import './assets/js/fa-shim';
 // Doing so breaks grapes' toolbar callbacks
 // This dirty argument is here to nest svg in original element
 // instead of just replacing
-window.FontAwesome.config.autoReplaceSvg = 'nest';
+// window.FontAwesome.config.autoReplaceSvg = 'nest';
 
 const Editor = ({ onChange, name, value }) => {
   const [mediaLibConfiguration, setMediaLibConfiguration] = useState({ open: false });
