@@ -1,8 +1,8 @@
 import pluginPkg from '../../package.json';
 import Wysiwyg from './components/Wysiwyg';
 import pluginId from './pluginId';
-import pluginIcon from './pluginIcon';
-import Settings from './containers/Settings';
+// import pluginIcon from './pluginIcon';
+// import Settings from './containers/Settings';
 
 export default {
   register(app) {
