@@ -33,13 +33,13 @@ const Editor = ({ onChange, name, value }) => {
   const [mediaLibPickedData, setMediaLibPickedData] = useState(null);
   const [onFilePickedListeners, setOnFilePickedListeners] = useState({});
   const [sharedAssetsManager, setSharedAssetsManager] = useState(null);
-  const {
-    strapi: {
-      componentApi: { getComponent },
-    },
-  } = useStrapi();
+  // const {
+  //   strapi: {
+  //     componentApi: { getComponent },
+  //   },
+  // } = useStrapi();
 
-  const MediaLibComponent = getComponent('media-library').Component;
+  // const MediaLibComponent = getComponent('media-library').Component;
 
   const onMediaLibInputChange = (localData) => {
     if (localData) {
@@ -160,7 +160,7 @@ const Editor = ({ onChange, name, value }) => {
         evt.preventDefault();
       }}
     >
-      {MediaLibComponent && mediaLibConfiguration.selected && (
+      {/* {MediaLibComponent && mediaLibConfiguration.selected && (
         <MediaLibComponent
           allowedTypes={['images']}
           isOpen={mediaLibConfiguration.open}
@@ -171,7 +171,7 @@ const Editor = ({ onChange, name, value }) => {
           onInputMediaChange={onMediaLibInputChange}
           onToggle={toggleMediaLib}
         />
-      )}
+      )} */}
       <div id="gjs" />
     </form>
   );

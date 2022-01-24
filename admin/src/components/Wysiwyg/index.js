@@ -1,7 +1,7 @@
 import React from 'react'; // eslint-disable-line import/no-unresolved
 import PropTypes from 'prop-types';
 import { isEmpty } from 'lodash';
-import { Label, InputDescription, InputErrors } from '@strapi/helper-plugin'; // eslint-disable-line import/no-unresolved
+// import { Label, InputDescription, InputErrors } from '@strapi/helper-plugin'; // eslint-disable-line import/no-unresolved
 import Editor from '../GrapesEditor';
 
 const Wysiwyg = ({ inputDescription, errors, label, name, noErrorsDescription, onChange, value }) => {
@@ -19,12 +19,12 @@ const Wysiwyg = ({ inputDescription, errors, label, name, noErrorsDescription, o
         fontFamily: 'Lato',
       }}
     >
-      <Label htmlFor={name} message={label} style={{ marginBottom: 10 }} />
+      {/* <Label htmlFor={name} message={label} style={{ marginBottom: 10 }} /> */}
 
       <Editor name={name} onChange={onChange} value={value} />
-      <InputDescription message={inputDescription} style={!isEmpty(inputDescription) ? { marginTop: '1.4rem' } : {}} />
-      <InputErrors errors={(!noErrorsDescription && errors) || []} name={name} />
-      {spacer}
+      {/* <InputDescription message={inputDescription} style={!isEmpty(inputDescription) ? { marginTop: '1.4rem' } : {}} /> */}
+      {/* <InputErrors errors={(!noErrorsDescription && errors) || []} name={name} /> */}
+      {/* {spacer} */}
     </div>
   );
 };
