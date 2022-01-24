@@ -5,7 +5,8 @@
   "strapi": {
     "name": "webpage-builder",
     "icon": "plug",
-    "description": "Add GrapesJS builder to your own strapi application."
+    "description": "Add GrapesJS builder to your own strapi application.",
+    "kind": "plugin"
   },
   "dependencies": {
     "@babel/runtime": "^7.16.7",
